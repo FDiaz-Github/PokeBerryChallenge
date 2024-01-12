@@ -1,6 +1,9 @@
 from typing import List, Dict, Any
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
+
 
 
 def calculate_stats(berry_stats: List) -> Dict[str, Any]:
