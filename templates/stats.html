@@ -7,15 +7,12 @@
     <h1>Berry Growth Time Statistics</h1>
     <p>Here are the statistics and the histogram for berry growth times:</p>
 
-    <!-- Display statistics -->
     <div>
-        <!-- You can iterate through stats and display them here -->
         {% for key, value in stats.items() %}
             <p>{{ key }}: {{ value }}</p>
         {% endfor %}
     </div>
 
-    <!-- Display Histogram Image -->
     <div>
         <img src="{{ url_for('static', filename=histogram_filename) }}" alt="Histogram of Berry Growth Times">
     </div>
